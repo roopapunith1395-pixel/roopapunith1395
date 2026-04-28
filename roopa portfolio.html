@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/HP/Desktop/roopa2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roopa | Portfolio</title>
+    <meta name="description" content="Professional portfolio of Roopa, showcasing projects, education, and skills.">
+    <link rel="stylesheet" href="./roopa portfolio_files/styles.css">
+    <!-- AOS CSS -->
+    <link href="./roopa portfolio_files/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./roopa portfolio_files/all.min.css">
+    <style>
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-top: 2rem;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        .hero-image-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent-glow);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+        }
+        .hero-image {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 4px solid var(--surface-color);
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+            50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+            75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+            100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .hero-actions {
+                justify-content: center;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-image {
+                width: 280px;
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
+
+    <header>
+        <div class="nav-container">
+            <a href="file:///C:/Users/HP/Desktop/roopa2/index.html" class="logo">R.</a>
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="file:///C:/Users/HP/Desktop/roopa2/index.html" class="active">Home</a>
+                <a href="file:///C:/Users/HP/Desktop/roopa2/about.html">About</a>
+                <a href="file:///C:/Users/HP/Desktop/roopa2/projects.html">Projects</a>
+                <a href="file:///C:/Users/HP/Desktop/roopa2/education.html">Education</a>
+                <a href="file:///C:/Users/HP/Desktop/roopa2/certification.html">Certifications</a>
+                <a href="file:///C:/Users/HP/Desktop/roopa2/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                <h2 style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 0.5rem; font-family: &#39;Inter&#39;, sans-serif;">Hello, I'm</h2>
+                <h1 class="hero-title">Roopa</h1>
+                <p class="hero-subtitle">A passionate professional building beautiful, engaging, and functional digital experiences. Let's create something amazing together.</p>
+                <div class="hero-actions">
+                    <a href="file:///C:/Users/HP/Desktop/roopa2/projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="file:///C:/Users/HP/Desktop/roopa2/resume.docx" class="btn btn-outline" download="">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="./roopa portfolio_files/profile.jpeg" alt="Roopa Portrait" class="hero-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Roopa. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="./roopa portfolio_files/aos.js.download"></script>
+    <script src="./roopa portfolio_files/script.js"></script>
+
+
+</body></html>
